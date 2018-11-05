@@ -135,7 +135,7 @@ module.exports = appInfo => {
     },
     _theme: {
       name: 'cabloy-cmsthemecommunityzhcn',
-      url: 'https://github.com/zhennann/egg-born-module-cms-themezhcn',
+      url: 'https://github.com/zhennann/egg-born-module-cabloy-cmsthemecommunityzhcn',
     },
     _project: {
       description: '顶级Javascript全栈业务开发框架，基于EggJS & VueJS.',
