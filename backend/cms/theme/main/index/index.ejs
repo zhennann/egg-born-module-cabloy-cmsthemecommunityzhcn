@@ -1,0 +1,33 @@
+<%- await include('../../layout/header.ejs') %>
+<div class="section-index">
+  <div class="project">
+    <div class="alert alert-danger" role="alert">
+      <div>新版官网文档正在开发中，请进入旧版</div>
+      <div><a href="https://cabloy.org/docs/#/zh-cn/">旧版</a></div>
+    </div>
+    <h1 class="title">
+      <img class="logo" src="<%=url('assets/images/logo.png')%>">
+      <span class="name"><%=site._project.name%></span>
+      <small class="version"><%=site._project.version%></small>
+    </h1>
+    <h2 class="description"><%=site._project.description%></h2>
+    <p class="buttons">
+      <%for(const button of site._project.buttons){%>
+      <a href="<%=url(button.url)%>" class="btn btn-<%=button.color || 'success'%> btn-lg"><%=button.title%></a>
+      <%}%>
+    </p>
+    <div class="row features">
+      <%for(const feature of site._project.features){%>
+      <div class="col-sm-<%=12/site._project.columns%> feature">
+        <div class="panel panel-default">
+          <div class="panel-heading"><%=feature.title%></div>
+          <div class="panel-body">
+            <%=feature.description%>
+          </div>
+        </div>
+      </div>
+      <%}%>
+    </div>
+  </div>
+</div>
+<%- await include('../../layout/footer.ejs') %>
