@@ -17,7 +17,7 @@ module.exports = appInfo => {
       buttons: [
         { title: 'Github', color: 'primary', url: 'https://github.com/zhennann/cabloy' },
         { title: '文档', color: 'primary', url: 'articles/introduce.html' },
-        { title: '在线演示', url: 'https://admin.cabloy.org' },
+        { title: '在线演示', url: 'https://admin.cabloy.com' },
       ],
       features: [
         { title: 'PC = MOBILE + PAD', description: '\'移动优先\' 策略，并完美匹配PC布局' },
